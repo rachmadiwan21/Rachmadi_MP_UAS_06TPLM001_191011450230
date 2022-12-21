@@ -28,7 +28,7 @@ class _BeritaScreenState extends State<BeritaScreen> {
       appBar: AppBar(
         title: Column(
           children: [
-            Center(child: Text('Kiki Alfiansyah - 191011450464 - 06 TPLM 002')),
+            Center(child: Text('Rachmadi setiawan - 191011450230')),
             Text('Berita Terbaru'),
           ],
         ),
@@ -51,8 +51,8 @@ class _BeritaScreenState extends State<BeritaScreen> {
               final date = DateFormat('dd-MM-yyyy').format(parsedDate);
               return Card(
                 child: ListTile(
-                  leading: Image.network(beritaCubit
-                      .kabarBeritaModel.data![index].thumbnail!),
+                  leading: Image.network(
+                      beritaCubit.kabarBeritaModel.data![index].thumbnail!),
                   contentPadding:
                       EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                   title: Text(
